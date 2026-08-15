@@ -1,0 +1,2 @@
+ALTER TABLE public.sensor_readings ADD COLUMN IF NOT EXISTS fan_speed numeric;
+COMMENT ON COLUMN public.sensor_readings.fan_speed IS 'Cooling fan operating percentage 0-100 (derived from Arduino PWM duty count 0-255).';

@@ -1,0 +1,1 @@
+ALTER TABLE public.sensor_readings ADD COLUMN IF NOT EXISTS temp_out numeric;
